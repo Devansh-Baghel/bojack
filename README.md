@@ -7,11 +7,11 @@ Under Development...
 # Setup
 - Clone the repository and cd into it
 ```bash
-git clone https://github.com/Devansh-Baghel/restaurant.git
+git clone https://github.com/Devansh-Baghel/bojack.git
 ```
 
 ```bash
-cd restaurant
+cd bojack
 ```
 - Install all dependencies
 ```bash

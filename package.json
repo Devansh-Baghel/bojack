@@ -1,7 +1,7 @@
 {
-  "name": "restaurant",
+  "name": "bojack",
   "version": "1.0.0",
-  "description": "Restaurant Page for The Odin Project",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=production",

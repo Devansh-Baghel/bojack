@@ -1,4 +1,4 @@
-# Restaurant
+# Bojack
 
 This is my submission for [TOP's Restaurant Page Project](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 

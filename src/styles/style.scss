@@ -1,0 +1,73 @@
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: ness;
+	src: url("../assets/ness.ttf");
+}
+
+body {
+	background: url("../assets/bojack-wallpaper-light.jpg");
+	background-size: cover;
+	font-family: ness, sans-serif;
+}
+
+.header{
+	background: url("../assets/logo.png");
+	background-size: contain;
+	width: 400px;
+	height: 149px;
+}
+
+.tab-container{
+	position: fixed;
+	top: 30vh;
+	left: 10px;
+	width: 200px;
+	height: 250px;
+	border-radius: 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 10px;
+	letter-spacing: 3px;
+
+	padding-left: 30px;
+	font-size: 36px;
+	color: white;
+	text-shadow: 3px 2px black;
+	font-weight: 700;
+
+
+	p{
+		cursor: pointer;
+	}
+
+	p:hover{
+		color: #F6DA00;
+	}
+
+}
+
+.svg-container{
+	background: url("../assets/dark-mode.svg");
+	background-size: cover;
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	top: 10px;
+	right: 10px;
+}
+
+body.dark{
+	background: url("../assets/bojack-wallpaper-dark.jpg");
+	background-size: cover;
+	
+	.svg-container{
+		background: url("../assets/light-mode.svg");
+		background-size: cover;
+		filter: invert(100%) sepia(91%) saturate(0%) hue-rotate(64deg) brightness(111%) contrast(100%);
+	}
+}

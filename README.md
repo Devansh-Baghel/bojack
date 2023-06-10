@@ -11,7 +11,7 @@ git clone https://github.com/Devansh-Baghel/restaurant.git
 ```
 
 ```bash
-cd restaurant
+cd bojack
 ```
 - Install all dependencies
 ```bash

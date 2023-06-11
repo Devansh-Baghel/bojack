@@ -1,4 +1,5 @@
 import "./styles/style.scss";
+import { toggleAboutTab } from "./js/about";
 
 const body = document.querySelector("body");
 const content = document.querySelector("#content");
@@ -26,12 +27,19 @@ aboutTab.innerText = "About";
 episodesTab.innerText = "Episodes";
 reviewsTab.innerText = "Reviews";
 
+const dialog = document.createElement("dialog");
+content.appendChild(dialog);
+dialog.classList.add("about-tab");
+
 
 // Theme Change
 const svgContainer = document.createElement("div");
 content.appendChild(svgContainer);
 svgContainer.classList.add("svg-container");
 svgContainer.addEventListener("click", () => {
-	// body.classList.add("")
 	body.classList.toggle("dark");
 })
+
+aboutTab.addEventListener("click", toggleAboutTab);
+
+export { dialog, content };

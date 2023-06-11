@@ -61,6 +61,14 @@ body {
 	right: 10px;
 }
 
+dialog.about-tab{
+	width: 600px;
+	height: 500px;
+	background-color: crimson;
+}
+
+
+// For dark theme
 body.dark{
 	background: url("../assets/bojack-wallpaper-dark.jpg");
 	background-size: cover;

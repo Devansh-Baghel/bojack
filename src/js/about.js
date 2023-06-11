@@ -5,6 +5,7 @@ const info = "BoJack Horseman is an American animated sitcom created by Raphael 
 function toggleAboutTab(){
 	dialog.innerText = "";
 	dialog.show();
+
 	const heading = document.createElement("h1");
 	dialog.appendChild(heading);
 	heading.innerText = "About Bojack Horseman";
@@ -12,6 +13,12 @@ function toggleAboutTab(){
 	const displayInfo = document.createElement("p");
 	dialog.appendChild(displayInfo);
 	displayInfo.innerText = info;
+
+	const learnMoreLink = document.createElement("a");
+	dialog.appendChild(learnMoreLink);
+	learnMoreLink.href = "https://bojackhorseman.fandom.com/wiki/BoJack_Horseman_(series)";
+	learnMoreLink.target = "_blank" // To open the link in a new tab
+	learnMoreLink.innerText = "Learn More";
 	
 	const closeButton = document.createElement("button");
 	dialog.appendChild(closeButton);

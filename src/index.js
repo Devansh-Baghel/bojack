@@ -16,15 +16,15 @@ content.appendChild(tabContainer);
 tabContainer.classList.add("tab-container");
 
 const aboutTab = document.createElement("p");
-const episodesTab = document.createElement("p");
+const charactersTab = document.createElement("p");
 const reviewsTab = document.createElement("p");
 
 tabContainer.appendChild(aboutTab);
-tabContainer.appendChild(episodesTab);
+tabContainer.appendChild(charactersTab);
 tabContainer.appendChild(reviewsTab);
 
 aboutTab.innerText = "About";
-episodesTab.innerText = "Episodes";
+charactersTab.innerText = "Characters";
 reviewsTab.innerText = "Reviews";
 
 const dialog = document.createElement("dialog");

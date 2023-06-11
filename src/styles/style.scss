@@ -1,3 +1,9 @@
+:root{
+	--purple: #8000EE;
+	--yellow: #F6DA00;
+}
+
+
 *, *::after, *::before{
 	box-sizing: border-box;
 }
@@ -61,10 +67,51 @@ body {
 	right: 10px;
 }
 
+button{
+	cursor: pointer;
+	padding: 10px 40px;
+	background-color: var(--yellow);
+	border: 3px solid black;
+	border-radius: 20px;
+
+}
+
+dialog{
+	color: white;
+	border: 3px solid black;
+	border-radius: 40px;
+	text-shadow: 2px 1px black;
+	letter-spacing: 3px;
+	font-weight: 700;
+	padding: 40px;
+
+	*:not(h1){
+		font-size: 26px;
+	}
+
+	a{
+		display: block;
+		color: white;
+	}
+	a:hover{
+		color: #F6DA00;
+	}
+
+	h1{
+		font-size: 36px;
+		text-shadow: 3px 2px black;
+	}
+
+	button{
+		margin-top: 20px;
+	}
+}
+
 dialog.about-tab{
-	width: 600px;
-	height: 500px;
-	background-color: crimson;
+	width: 800px;
+	height: 450px;
+	top: 25vh;
+	background-color: cornflowerblue;
 }
 
 
@@ -77,5 +124,9 @@ body.dark{
 		background: url("../assets/light-mode.svg");
 		background-size: cover;
 		filter: invert(100%) sepia(91%) saturate(0%) hue-rotate(64deg) brightness(111%) contrast(100%);
+	}
+
+	.about-tab{
+		background-color: #8000EE;
 	}
 }

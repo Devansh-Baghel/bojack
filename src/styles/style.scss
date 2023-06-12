@@ -112,7 +112,7 @@ dialog{
 }
 
 
-dialog.reviews-tab{
+dialog{
   >div{
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +129,55 @@ dialog.reviews-tab{
       border-radius: 20px;
     }
   }
+}
+
+dialog.characters-tab{
+  width: 800px;
+  >div{
+
+    h2{
+      margin-top: 100px;
+    }
+
+    div:nth-child(1){
+      background: url("../assets/bojack.png");
+      background-size: cover;
+    }
+
+
+    div:nth-child(2){
+      background: url("../assets/todd.png");
+      background-size: cover;
+    }
+
+
+    div:nth-child(3){
+      background: url("../assets/diane.png");
+      background-size: cover;
+    }
+
+    div:nth-child(4){
+      background: url("../assets/peanutbutter.png");
+      background-size: cover;
+    }
+
+    div:nth-child(5){
+      background: url("../assets/pc.png");
+      background-size: cover;
+    }
+
+
+    >div{
+      width: 130px;
+      height: 200px;
+      display: block;
+      
+
+    }
+
+
+  }
+
 }
 
 

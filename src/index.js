@@ -1,6 +1,7 @@
 import "./styles/style.scss";
 import { toggleAboutTab } from "./js/about";
 import { toggleReviewsTab } from "./js/reviews";
+import { toggleCharactersTab } from "./js/characters";
 
 const body = document.querySelector("body");
 const content = document.querySelector("#content");
@@ -43,5 +44,6 @@ svgContainer.addEventListener("click", () => {
 
 aboutTab.addEventListener("click", toggleAboutTab);
 reviewsTab.addEventListener("click", toggleReviewsTab);
+charactersTab.addEventListener("click", toggleCharactersTab);
 
 export { dialog, content };

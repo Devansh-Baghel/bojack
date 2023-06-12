@@ -12,6 +12,7 @@ const reviewLinks = [
 
 function toggleReviewsTab(){
   dialog.classList.add("reviews-tab");
+  dialog.classList.remove("characters-tab");
 	dialog.innerText = "";
 	dialog.show();
 

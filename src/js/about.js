@@ -4,6 +4,7 @@ const info = "BoJack Horseman is an American animated sitcom created by Raphael 
 
 function toggleAboutTab(){
   dialog.classList.add("about-tab");
+  dialog.classList.remove("characters-tab");
 	dialog.innerText = "";
 	dialog.show();
 

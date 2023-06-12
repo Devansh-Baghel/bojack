@@ -1,8 +1,9 @@
-import { dialog, content } from "../index"
+import { dialog,  } from "../index"
 
 const info = "BoJack Horseman is an American animated sitcom created by Raphael Bob-Waksberg. The series stars Will Arnett as the eponymous character, BoJack Horseman."
 
 function toggleAboutTab(){
+  dialog.classList.add("about-tab");
 	dialog.innerText = "";
 	dialog.show();
 

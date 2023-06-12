@@ -1,5 +1,6 @@
 import "./styles/style.scss";
 import { toggleAboutTab } from "./js/about";
+import { toggleReviewsTab } from "./js/reviews";
 
 const body = document.querySelector("body");
 const content = document.querySelector("#content");
@@ -29,7 +30,7 @@ reviewsTab.innerText = "Reviews";
 
 const dialog = document.createElement("dialog");
 content.appendChild(dialog);
-dialog.classList.add("about-tab");
+
 
 
 // Theme Change
@@ -41,5 +42,6 @@ svgContainer.addEventListener("click", () => {
 })
 
 aboutTab.addEventListener("click", toggleAboutTab);
+reviewsTab.addEventListener("click", toggleReviewsTab);
 
 export { dialog, content };
